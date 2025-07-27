@@ -63,9 +63,7 @@ print(df.isnull().sum())
 - **Features:** 7 columns (pickup/dropoff coordinates, datetime, fare_amount, passenger_count)
 - **Missing Values:** Detected nulls in dropoff coordinates
 - **Data Quality Issues:** Pickup_datetime not in proper datetime format
-
-
-<img width="1139" height="632" alt="clean_data" src="https://github.com/user-attachments/assets/70c9d0ec-c993-4ee7-b734-74483aeb8167" />
+<img width="1074" height="453" alt="missingValues" src="https://github.com/user-attachments/assets/969a5be8-185d-4331-b85e-a457f688632b" />
 
 ### Exploratory Data Analysis (EDA)
 
