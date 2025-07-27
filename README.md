@@ -2,13 +2,6 @@
 
 **Name and ID:** Munezero Eugene - 26509
 
-## 📘 Complete Analysis Documentation
-[👉 Click here to view the Python analysis notebook]([notebooks/uber_analysis.ipynb](https://www.kaggle.com/code/eugenemunezero/bigdataproject))
-
-A comprehensive data analysis project analyzing Uber ride fare patterns using Python (Pandas) and Power BI
-
-![Project Banner](images/project-banner.png)
-
 This project performs a detailed analysis of Uber ride fare data using Python and Power BI. It includes data preprocessing, feature engineering, and advanced dashboard visualization to uncover trends and insights in fare amounts, trip durations, and spatial-temporal patterns.
 
 ## 🎯 Project Objective
@@ -35,7 +28,6 @@ Analyze the Uber Fares Dataset to gain comprehensive insights into fare patterns
 | 🧾 **GitHub** | Version control and documentation |
 | 📋 **Kaggle** | Dataset source |
 
-![Tools Stack](images/tools-stack.png)
 
 ## 📊 Data Understanding & Preparation
 
@@ -51,8 +43,8 @@ import seaborn as sns
 df = pd.read_csv('uber.csv')
 df.head()
 ```
+<img width="1894" height="637" alt="dataSet" src="https://github.com/user-attachments/assets/81ed5bc7-3339-49ed-91f2-a6791410a906" />
 
-![Data Loading](images/data-loading.png)
 
 ```python
 print("Dataset Shape:", df.shape)
@@ -61,6 +53,7 @@ print(df.dtypes)
 print("\nMissing Values:")
 print(df.isnull().sum())
 ```
+<img width="1569" height="300" alt="DataSetOutput" src="https://github.com/user-attachments/assets/8b8fd30d-db11-4326-840c-0edd9a3602af" />
 
 **✅ Initial Data Assessment:**
 - **Total Records:** 200,000+ ride records
@@ -68,7 +61,8 @@ print(df.isnull().sum())
 - **Missing Values:** Detected nulls in dropoff coordinates
 - **Data Quality Issues:** Pickup_datetime not in proper datetime format
 
-![Data Overview](images/data-overview.png)
+
+<img width="1139" height="632" alt="clean_data" src="https://github.com/user-attachments/assets/70c9d0ec-c993-4ee7-b734-74483aeb8167" />
 
 ### Exploratory Data Analysis (EDA)
 
@@ -116,6 +110,8 @@ df = df[(df['fare_amount'] > 0) &
 # 5. Remove extreme outliers
 df = df[df['fare_amount'] <= df['fare_amount'].quantile(0.99)]
 ```
+<img width="971" height="617" alt="Date" src="https://github.com/user-attachments/assets/60ac96f7-65d3-4834-9d4a-e5541b3045da" />
+
 
 **Key Cleaning Actions:**
 - ✅ Dropped `Unnamed: 0` column (redundant index)
@@ -130,7 +126,8 @@ print("Cleaned Dataset Shape:", df.shape)
 
 **📈 Final Dataset:** 195,000+ rows × 7 columns (clean and analysis-ready)
 
-![Data Cleaning Results](images/cleaning-results.png)
+<img width="1139" height="632" alt="clean_data" src="https://github.com/user-attachments/assets/02df9cf7-8d4e-4336-bbcd-1cb7864fed50" />
+
 
 ## ⚙️ Feature Engineering
 
@@ -160,7 +157,8 @@ df['distance_km'] = haversine_distance(df['pickup_latitude'],
 - **Calculated Metrics:** distance_km using Haversine formula
 - **Business Logic:** Peak hours defined as 7-9 AM and 5-7 PM
 
-![Feature Engineering](images/feature-engineering.png)
+
+<img width="1569" height="300" alt="DataSetOutput" src="https://github.com/user-attachments/assets/72040670-e03e-4971-b225-7a2cea7ecb32" />
 
 ### Export Enhanced Dataset
 
@@ -170,7 +168,8 @@ df.to_csv('uber_cleaned_enhanced.csv', index=False)
 print("✅ Dataset ready for Power BI import!")
 ```
 
-![Final Dataset](images/final-dataset.png)
+<img width="1139" height="632" alt="clean_data" src="https://github.com/user-attachments/assets/098b068a-735a-49d2-819d-617e1a9b3ce2" />
+
 
 ## 📊 Power BI Dashboard Development
 
@@ -199,7 +198,8 @@ All visualizations include interactive filters and professional formatting:
 
 *👆 Complete interactive dashboard available in PowerBI file 👆*
 
-![Dashboard Overview](images/dashboard-overview.png)
+
+<img width="1181" height="900" alt="chart" src="https://github.com/user-attachments/assets/5b8a893f-1503-4e27-bdf8-90f13a130dce" />
 
 ### Interactive Features & Filters
 
@@ -217,7 +217,6 @@ All visualizations include interactive filters and professional formatting:
 - Tooltip enhancements with calculated measures
 - Export functionality for insights sharing
 
-![Interactive Features](images/interactive-features.gif)
 
 ## 🔍 Key Findings & Analytical Insights
 
@@ -232,7 +231,8 @@ All visualizations include interactive filters and professional formatting:
 | 🚗 **Distance Analysis** | Average trip distance 2.8 km | Urban short-haul transportation focus |
 | 🗺️ **Geographic Hotspots** | Manhattan & Brooklyn dominate pickups | High-density urban center concentration |
 
-![Key Findings](images/key-findings.png)
+<img width="603" height="370" alt="Capture33" src="https://github.com/user-attachments/assets/f2b7ee00-3966-47bd-bd6d-34a3ff6e79fa" />
+
 
 ### Advanced Analytics Discoveries
 
@@ -260,7 +260,6 @@ All visualizations include interactive filters and professional formatting:
 | `documentation/` | Detailed methodology docs | ✅ Technical details |
 | `README.md` | Comprehensive project report | ✅ This document |
 
-![Repository Structure](images/repo-structure.png)
 
 ## 🌟 Business Recommendations & Applications
 
@@ -275,7 +274,7 @@ This comprehensive fare analysis provides actionable intelligence for:
 
 **💡 Key Business Value:** Data-driven decision making for pricing, operations, and strategic planning
 
-![Business Applications](images/business-applications.png)
+
 
 ## 🚀 Dashboard Usage Guide
 
@@ -304,7 +303,6 @@ This comprehensive fare analysis provides actionable intelligence for:
    - Execute cells sequentially to reproduce analysis
    - Review EDA and feature engineering process
 
-![Installation Guide](images/installation-guide.png)
 
 ### Dashboard Navigation
 
@@ -313,7 +311,7 @@ This comprehensive fare analysis provides actionable intelligence for:
 **📈 Trends Page:** Time-series and pattern analysis
 **🗺️ Geographic Page:** Spatial distribution insights
 
-![Dashboard Navigation](images/dashboard-navigation.png)
+
 
 ## 📋 Assignment Completion Checklist
 
@@ -353,25 +351,13 @@ This comprehensive fare analysis provides actionable intelligence for:
 - [x] ✅ Screenshots documenting analysis process
 - [x] ✅ Professional README file explaining project
 
-![Project Completion](images/project-completion.png)
 
 ## 📞 Contact Information
 
-**[Your Name]**  
-🎓 Student, [University Name]  
-📚 Course: [Course Code] – Introduction to Big Data Analytics  
-📧 Email: [your.email@university.edu](mailto:your.email@university.edu)  
-🔗 LinkedIn: [Your LinkedIn Profile]  
-🌐 Portfolio: [Your Portfolio Website]  
-
-**📅 Project Timeline:**
-- Start Date: [Project Start Date]
-- Completion Date: [Project End Date]  
-- Last Updated: [Current Date]
-
-![Contact Information](images/contact-info.png)
-
----
+**Munezero Eugene**  
+🎓 Student, AUCA  
+📚 Course:  Introduction to Big Data Analytics  
+ 
 
 **📊 Project Statistics:**
 - **Dataset Size:** 200,000+ records analyzed
