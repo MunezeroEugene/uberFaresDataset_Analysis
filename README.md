@@ -4,7 +4,8 @@
 
 This project performs a detailed analysis of Uber ride fare data using Python and Power BI. It includes data preprocessing, feature engineering, and advanced dashboard visualization to uncover trends and insights in fare amounts, trip durations, and spatial-temporal patterns.
 ## 📘 Kaggle Notebook
-[👉 Click here to view the Python analysis notebook]((https://www.kaggle.com/code/eugenemunezero/bigdataproject))
+[👉 Click here to view the Python analysis notebook](https://www.kaggle.com/code/eugenemunezero/bigdataproject)
+
 
 ## 🎯 Project Objective
 
