@@ -58,12 +58,15 @@ print(df.isnull().sum())
 ```
 <img width="1569" height="300" alt="DataSetOutput" src="https://github.com/user-attachments/assets/8b8fd30d-db11-4326-840c-0edd9a3602af" />
 
+
+
 **✅ Initial Data Assessment:**
 - **Total Records:** 200,000+ ride records
 - **Features:** 7 columns (pickup/dropoff coordinates, datetime, fare_amount, passenger_count)
 - **Missing Values:** Detected nulls in dropoff coordinates
 - **Data Quality Issues:** Pickup_datetime not in proper datetime format
-<img width="1074" height="453" alt="missingValues" src="https://github.com/user-attachments/assets/969a5be8-185d-4331-b85e-a457f688632b" />
+- 
+<img width="456" height="239" alt="Missing_output" src="https://github.com/user-attachments/assets/01d90c98-eabb-4509-afe0-9e4c140655d7" />
 
 ### Exploratory Data Analysis (EDA)
 
@@ -78,8 +81,6 @@ df.describe()
 - **Quartiles & Ranges:** Identified data distribution patterns
 - **Outlier Detection:** Found extreme fare values and invalid coordinates
 
-![Descriptive Statistics](images/descriptive-stats.png)
-
 ### Data Quality Assessment
 
 **✅ Data Quality Issues Identified:**
@@ -88,7 +89,6 @@ df.describe()
 - Missing dropoff coordinates in some records
 - Extreme outlier values requiring investigation
 
-![Data Quality Issues](images/data-quality-issues.png)
 
 ## 🧹 Data Cleaning Process
 
@@ -180,8 +180,6 @@ print("✅ Dataset ready for Power BI import!")
 - ✅ Verified data types and relationships in Power Query Editor
 - ✅ Created calculated columns and measures using DAX
 
-![Dashboard Import](images/dashboard-import.png)
-
 ### Comprehensive Dashboard Visualizations
 
 All visualizations include interactive filters and professional formatting:
@@ -198,9 +196,8 @@ All visualizations include interactive filters and professional formatting:
 | 8️⃣ | **Ride Duration** | Histogram | Trip duration distribution patterns |
 
 *👆 Complete interactive dashboard available in PowerBI file 👆*
+<img width="787" height="500" alt="dash" src="https://github.com/user-attachments/assets/11400611-8206-4b55-9be4-09354a878953" />
 
-
-<img width="1181" height="900" alt="chart" src="https://github.com/user-attachments/assets/5b8a893f-1503-4e27-bdf8-90f13a130dce" />
 
 ### Interactive Features & Filters
 
@@ -232,8 +229,6 @@ All visualizations include interactive filters and professional formatting:
 | 🚗 **Distance Analysis** | Average trip distance 2.8 km | Urban short-haul transportation focus |
 | 🗺️ **Geographic Hotspots** | Manhattan & Brooklyn dominate pickups | High-density urban center concentration |
 
-<img width="603" height="370" alt="Capture33" src="https://github.com/user-attachments/assets/f2b7ee00-3966-47bd-bd6d-34a3ff6e79fa" />
-
 
 ### Advanced Analytics Discoveries
 
@@ -246,8 +241,6 @@ All visualizations include interactive filters and professional formatting:
 - Long-distance rides to airports show different pricing structure
 - Some short rides have high fares due to surge pricing
 - Weekend late-night rides exhibit premium pricing patterns
-
-![Statistical Analysis](images/statistical-analysis.png)
 
 ## 📁 Repository Structure & Deliverables
 
@@ -369,5 +362,3 @@ This comprehensive fare analysis provides actionable intelligence for:
 
 ---
 
-© [Your Name], 2025  
-*This project is submitted for academic evaluation under [University Name]. All analysis and insights are original work.*
