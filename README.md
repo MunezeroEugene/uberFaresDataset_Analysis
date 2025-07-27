@@ -3,6 +3,8 @@
 **Name and ID:** Munezero Eugene - 26509
 
 This project performs a detailed analysis of Uber ride fare data using Python and Power BI. It includes data preprocessing, feature engineering, and advanced dashboard visualization to uncover trends and insights in fare amounts, trip durations, and spatial-temporal patterns.
+## 📘 Complete Analysis Documentation
+[👉 Click here to view the Python analysis notebook]([notebooks/uber_analysis.ipynb](https://www.kaggle.com/code/eugenemunezero/bigdataproject))
 
 ## 🎯 Project Objective
 
